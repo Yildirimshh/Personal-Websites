@@ -1,0 +1,138 @@
+
+ 
+ /**
+  * Housekeeping
+  * 1. Position our wrapper in the dead centre of the page
+  */
+ html {
+   box-sizing: border-box;
+ }
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
+ body {
+   color: #333;
+   font-family: 'futura-pt', sans-serif;
+   font-size: 1rem;
+   line-height: 1.5;
+ }
+ h2 {
+   font-size: 1.25rem;
+   line-height: 1.2;
+   margin: 0;
+ }
+ .wrapper {
+   margin: 0 auto;
+   width: 600px;
+ }
+ 
+ 
+ /*------------------------------------*\
+     $PEN-STYLES
+ \*------------------------------------*/
+ /* Clearing */
+ .group:before,
+ .group:after {
+   content: " ";
+   display: table;
+ }
+ .group:after { clear: both; }
+ .group { *zoom: 1; }
+ 
+ 
+ /* Layout */
+ .header {
+   border-bottom: 2px solid #222;
+   padding: 10px;
+   text-align: right;
+ }
+ 
+ /* Products */
+ .products { padding: 10px; }
+ 
+ 
+ /* Product */
+ .product {
+   float: left;
+   padding: 10px;
+   text-align: center;
+   margin-bottom: 10px;
+ }
+ 
+ /* Product Inner */
+ 
+ 
+ /* Product Image */
+ .product__image {
+  align-items: center;
+   margin-bottom: 20px;
+   margin-top: 40px;
+ }
+ .product__image img {
+   display: block;  
+   height: 200px;
+   max-width: 180px;
+ }
+ 
+ /* Product Name */
+ .product__name {
+   font-size: 15px;
+   font-weight: 400;
+   margin-bottom: 20px;
+   margin-top: 20px;
+ }
+ 
+ /* Product Price */
+ .product__price {
+   font-size: 20px;
+   font-weight: 700;
+   margin-bottom: 10px;
+ }
+ 
+ /* Product Short Description */
+ .product__short-description {
+  font-size: 10px;
+   margin-bottom: 7px;
+ }
+ 
+ /* Add to Cart */
+ .add-to-cart {
+   background: #222;
+   border-radius: 3px;
+   color: #fff;
+   font-size: 20px;  
+   font-weight: 700;
+   margin-top: 3px;
+   padding: 3px;
+   text-align: center;
+   margin-left: 10px;
+ }
+ .add-to-cart:hover {
+   opacity: .50;
+   cursor: pointer;
+ }
+ 
+ /* List View */
+ .list .product__image {
+   float: left;
+   width: 25%;
+ }
+ .list .product__details {
+   float: left;
+   padding-left: 25%;
+   padding-bottom: 64px;
+   text-align: left;
+   width: 66.66666%;
+ }
+ .list .add-to-cart {
+   width: 50%;
+ }
+ 
+ 
+ /* Widths */
+ .grid .product {
+   width: 33.33333%;
+ }
+ .list .product {
+   width: 100%;
+ }
